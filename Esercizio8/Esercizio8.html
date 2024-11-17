@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<head>
+    <title>Gestione Anagrafica Utenti</title>
+</head>
+<body>
+    <h1>Modulo di Registrazione</h1>
+    <form action="Esercizio8.php" method="POST">
+        <!-- 
+            utilizzo dei pattern per rendere i dati da inserire corretti
+            i pattern possono accettare:
+            A-Z = tutte le lettere maiuscole
+            a-z = tutte le lettere minuscole
+            \d = tutti i numeri
+            \s = lo spazio tra una parola e un'altra
+            \. = un punto, ovvero qualsiasi carattere
+            ^ = indica l'inizio della stringa
+            .
+            utilizzo poi un forzatore di scrittura:
+            ? = vuole dire che può essercene solo 1 o nessuno
+            * = vuole dire che può non esserci
+            + = vuole dire che possono essere quanti caratteri voglio ripetuti
+            {numero} = forzo un numero di caratteri, tipo codice fiscale
+            {numero,} = un numero di caratteri che deve essere minimo quel numero
+            {minimo,massimo} = un numero di caratteri tra un intervallo 
+            .
+            esempi:
+            [A-Za-z\s]+ = tutte le maiuscole o minuscole, accetto spazi e posso usare le lettere quanto voglio = sistema del nome
+            ---
+            (?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,} = 
+            con ?= controllo se i caratteri scritti dopo sono presenti o meno
+            con .* contollo se c'è almeno un carattere di quel tipo
+            quindi:
+                ?=.*[A-Z] = controllo se ci sono maiuscole
+                ?=.*\d = controllo se è presente un numero
+                ?=.*[@$!%*?&] = controllo se è presente un carattere tra questi elencati
+                [A-Za-z\d@$!%*?&]{8,} = accetto tutte le lettere, i numeri, i caratteri elencati e la lunghezza è di minimo 8 = sistema password
+        -->
+        <!-- Nome -->
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome" pattern="[A-Za-z\s]+" required>
+        <br>
+        <!-- Cognome -->
+        <label for="cognome">Cognome:</label>
+        <input type="text" id="cognome" name="cognome" pattern="[A-Za-z\s']+" required>
+        <br>
+        <!-- Data di nascita -->
+        <label for="data_nascita">Data di Nascita:</label>
+        <input type="date" id="data_nascita" name="data_nascita" required>
+        <br>
+        <!-- Codice Fiscale -->
+        <label for="codice_fiscale">Codice Fiscale (opzionale):</label>
+        <input type="text" id="codice_fiscale" name="codice_fiscale" pattern="[A-Z\d]{16}">
+        <br>
+        <!-- Email -->
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        <br>
+        <!-- Cellulare -->
+        <label for="cellulare">Cellulare (opzionale):</label>
+        <input type="tel" id="cellulare" name="cellulare" pattern="\d{10}">
+        <br>
+        <!-- Indirizzo -->
+        <fieldset>
+            <legend>Indirizzo</legend>
+            <label for="via">Via/Piazza:</label>
+            <input type="text" id="via" name="via" required>
+            <br>
+
+            <label for="cap">CAP:</label>
+            <input type="text" id="cap" name="cap" pattern="\d{5}" required>
+            <br>
+
+            <label for="comune">Comune:</label>
+            <input type="text" id="comune" name="comune" required>
+            <br>
+
+            <label for="provincia">Provincia:</label>
+            <input type="text" id="provincia" name="provincia" pattern="[A-Za-z]{2}" required>
+        </fieldset>
+        <br>
+        <!-- Nickname -->
+        <label for="nickname">Nickname:</label>
+        <input type="text" id="nickname" name="nickname" required>
+        <br>
+        <!-- Password -->
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" 
+               pattern="(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}" required>
+        <br>
+
+        <button type="submit">Invia</button>
+    </form>
+    <br>
+    <!-- link per tornare a index.html -->
+    <a href='..\index.html'>torna all'indice</a>
+</body>
+</html>
