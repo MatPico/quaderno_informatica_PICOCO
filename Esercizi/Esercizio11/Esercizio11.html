@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<head>
+    <title>Login o Registrazione su FILE</title>
+</head>
+<body>
+    <h1>Benvenuto - File</h1>
+    <p>L'esercizio registra i dati su un file, che e' quindi piu' lento ma versatile e duraturo</p>
+    <!-- 
+        Codice simile all'esercizio 5 ma riapplicato
+        utilizzo un input nascosto per ogni for che contenga l'azione che si vuole svolgere
+        es: <input type="hidden" name="action" value="register"> --- per registrarsi
+        così che quando verrà chiamato il php, lui potrà controllare che azione deve svolgere (tra registrare e accedere)
+    -->
+    <p>Scegli un'opzione:</p>
+
+    <h2>Registrati</h2>
+    <form action="Esercizio11.php" method="POST">
+        <input type="hidden" name="action" value="register">
+        <label for="nome">Nome utente:</label>
+        <input type="text" id="username" name="username" required><br>
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required><br>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required><br>
+        <button type="submit">Registrati</button>
+    </form>
+
+    <h2>Accedi</h2>
+    <!-- stesse cose scritte sopra, ma per accedere-->
+    <form action="Esercizio11.php" method="POST">
+        <input type="hidden" name="action" value="login">
+        <label for="username_login">Nome utente:</label>
+        <input type="text" id="username_login" name="username" required><br>
+        <label for="password_login">Password:</label>
+        <input type="password" id="password_login" name="password" required><br>
+        <button type="submit">Accedi</button>
+    </form>
+    <br>
+    <!-- link per tornare a index.html -->
+    <a href="..\..\index.html">torna all'indice</a>
+</body>
+</html>

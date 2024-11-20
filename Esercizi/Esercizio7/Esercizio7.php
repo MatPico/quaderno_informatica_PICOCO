@@ -75,6 +75,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 </form>
 <br>
 <!-- link per tornare a index.html -->
-<a href='..\index.html'>torna all'indice</a>
+<a href='..\..\index.html'>torna all'indice</a>
 </body>
 </html>

@@ -5,7 +5,9 @@ In questo codice non vengono implementati script e style, come da consegna.
 Vengono però richiesti in alcuni esercizi, vengono utilizzate mecchaniche esterne ai comandi css e js.   
 Sono presenti codici creati solo per comprendere meglio le meccaniche e codici richiesti dai professori che verranno segnalati tramite messaggio.   
 GitHub : @Mat_pico    
-Versione appunti: 1.0.0   
+Versione appunti: 1.0.1    
+
+**Ultima patch:** Aggiunti esercizi 10 e 11
 
 ---
 

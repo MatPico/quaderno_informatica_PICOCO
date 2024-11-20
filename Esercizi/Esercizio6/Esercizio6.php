@@ -29,7 +29,7 @@ function display_form($error_message = '') {
         </form>
         <br>
         <!-- link per tornare a index.html -->
-        <a href='..\index.html'>torna all'indice</a>
+        <a href='..\..\index.html'>torna all'indice</a>
     </body>
     </html>";
 }
@@ -52,7 +52,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                 <h1>Benvenuto, $username!</h1>
                 <p>Login effettuato con successo.</p>
                 <!-- link per tornare a index.html -->
-                <a href='..\index.html'>torna all'indice</a>
+                <a href='..\..\index.html'>torna all'indice</a>
             </body>
             </html>";
         } else {

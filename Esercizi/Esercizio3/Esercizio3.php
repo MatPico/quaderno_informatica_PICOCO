@@ -37,6 +37,6 @@ $browser = $_SERVER['HTTP_USER_AGENT'];
     <!-- mostro in quale browser l'utente è collegato -->
     <p>Stai usando il browser: <?php echo $browser; ?></p>
     <!-- link per tornare a index.html -->
-    <a href="..\index.html">torna all'indice</a>
+    <a href="..\..\index.html">torna all'indice</a>
 </body>
 </html>

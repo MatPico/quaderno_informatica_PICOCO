@@ -11,7 +11,7 @@
 <body>
     <h1>Triangoli PHP</h1>
     <!-- link per tornare a index.html -->
-    <a href="..\index.html">torna all'indice</a>
+    <a href="..\..\index.html">torna all'indice</a>
     <?php
 
     /*
@@ -55,6 +55,6 @@
     ?>
     <br>
     <!-- link per tornare a index.html -->
-    <a href="..\index.html">torna all'indice</a>
+    <a href="..\..\index.html">torna all'indice</a>
 </body>
 </html>
