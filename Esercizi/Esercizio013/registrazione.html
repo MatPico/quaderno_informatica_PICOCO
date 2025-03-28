@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">  <!-- Definisce il set di caratteri utilizzato nella pagina -->
+    <title>Registrazione</title>  <!-- Titolo della pagina -->
+</head>
+<body>
+    <h1>Registrazione</h1>  <!-- Intestazione principale della pagina -->
+
+    <!-- Form per la registrazione dell'autista -->
+    <form action="registrazione_autista.php" method="post">
+        <h2>Autista</h2>  <!-- Intestazione per la sezione autista -->
+        <label for="nome_autista">Nome:</label>  <!-- Etichetta per il campo Nome -->
+        <input type="text" id="nome_autista" name="nome_autista" required>  <!-- Campo di input per il nome dell'autista -->
+        <br>
+        
+        <label for="cognome_autista">Cognome:</label>  <!-- Etichetta per il campo Cognome -->
+        <input type="text" id="cognome_autista" name="cognome_autista" required>  <!-- Campo di input per il cognome dell'autista -->
+        <br>
+
+        <label for="numero_autista">Numero:</label>  <!-- Etichetta per il campo Numero -->
+        <input type="text" id="numero_autista" name="numero_autista" required>  <!-- Campo di input per il numero dell'autista -->
+        <br>
+
+        <label for="numero_patente">Numero Patente:</label>  <!-- Etichetta per il campo Numero Patente -->
+        <input type="text" id="numero_patente" name="numero_patente" required>  <!-- Campo di input per il numero di patente -->
+        <br>
+
+        <label for="scadenza_patente">Scadenza Patente:</label>  <!-- Etichetta per il campo Scadenza Patente -->
+        <input type="date" id="scadenza_patente" name="scadenza_patente" required>  <!-- Campo di input per la data di scadenza della patente -->
+        <br>
+
+        <label for="mail_autista">Mail:</label>  <!-- Etichetta per il campo Email -->
+        <input type="email" id="mail_autista" name="mail_autista" required>  <!-- Campo di input per l'email dell'autista -->
+        <br>
+
+        <label for="password_autista">Password:</label>  <!-- Etichetta per il campo Password -->
+        <input type="password" id="password_autista" name="password_autista" required>  <!-- Campo di input per la password dell'autista -->
+        <br>
+
+        <label for="colore_macchina">Colore Macchina:</label>  <!-- Etichetta per il campo Colore Macchina -->
+        <input type="text" id="colore_macchina" name="colore_macchina" required>  <!-- Campo di input per il colore della macchina -->
+        <br>
+
+        <label for="modello_macchina">Modello Macchina:</label>  <!-- Etichetta per il campo Modello Macchina -->
+        <input type="text" id="modello_macchina" name="modello_macchina" required>  <!-- Campo di input per il modello della macchina -->
+        <br>
+
+        <label for="marca_macchina">Marca Macchina:</label>  <!-- Etichetta per il campo Marca Macchina -->
+        <input type="text" id="marca_macchina" name="marca_macchina" required>  <!-- Campo di input per la marca della macchina -->
+        <br>
+
+        <label for="anno_macchina">Anno Macchina:</label>  <!-- Etichetta per il campo Anno Macchina -->
+        <input type="text" id="anno_macchina" name="anno_macchina" required>  <!-- Campo di input per l'anno della macchina -->
+        <br>
+
+        <label for="posti_macchina">Posti Macchina:</label>  <!-- Etichetta per il campo Posti Macchina -->
+        <input type="number" id="posti_macchina" name="posti_macchina" required>  <!-- Campo di input per il numero di posti della macchina -->
+        <br>
+
+        <button type="submit">Registrati</button>  <!-- Pulsante per inviare il form di registrazione dell'autista -->
+    </form>
+
+    <!-- Form per la registrazione del passeggero -->
+    <form action="registrazione_passeggero.php" method="post">
+        <h2>Passeggero</h2>  <!-- Intestazione per la sezione passeggero -->
+        <label for="nome_passeggero">Nome:</label>  <!-- Etichetta per il campo Nome -->
+        <input type="text" id="nome_passeggero" name="nome_passeggero" required>  <!-- Campo di input per il nome del passeggero -->
+        <br>
+
+        <label for="cognome_passeggero">Cognome:</label>  <!-- Etichetta per il campo Cognome -->
+        <input type="text" id="cognome_passeggero" name="cognome_passeggero" required>  <!-- Campo di input per il cognome del passeggero -->
+        <br>
+
+        <label for="numero_passeggero">Numero:</label>  <!-- Etichetta per il campo Numero -->
+        <input type="text" id="numero_passeggero" name="numero_passeggero" required>  <!-- Campo di input per il numero del passeggero -->
+        <br>
+
+        <label for="numero_carta_identita">Numero Carta Identità:</label>  <!-- Etichetta per il campo Numero Carta Identità -->
+        <input type="text" id="numero_carta_identita" name="numero_carta_identita" required>  <!-- Campo di input per il numero della carta d'identità del passeggero -->
+        <br>
+
+        <label for="mail_passeggero">Mail:</label>  <!-- Etichetta per il campo Email -->
+        <input type="email" id="mail_passeggero" name="mail_passeggero" required>  <!-- Campo di input per l'email del passeggero -->
+        <br>
+
+        <label for="password_passeggero">Password:</label>  <!-- Etichetta per il campo Password -->
+        <input type="password" id="password_passeggero" name="password_passeggero" required>  <!-- Campo di input per la password del passeggero -->
+        <br>
+
+        <button type="submit">Registrati</button>  <!-- Pulsante per inviare il form di registrazione del passeggero -->
+    </form>
+</body>
+</html>

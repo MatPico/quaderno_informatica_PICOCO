@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="it"> <!-- specifica la lingua della pagina -->
+<head>
+    <meta charset="UTF-8"> <!-- definisce il set di caratteri per supportare caratteri speciali -->
+    <title>login</title> <!-- titolo della pagina -->
+</head>
+<body>
+    <h1>login</h1> <!-- intestazione principale della pagina -->
+
+    <!-- form per il login dell'autista -->
+    <form action="login_autista.php" method="post"> <!-- invia i dati al file login_autista.php -->
+        <h2>autista</h2> <!-- sottotitolo per distinguere il login dell'autista -->
+        
+        <!-- campo per inserire l'email dell'autista -->
+        <label for="mail_autista">mail:</label>
+        <input type="email" id="mail_autista" name="mail_autista" required><br>
+        
+        <!-- campo per inserire la password dell'autista -->
+        <label for="password_autista">password:</label>
+        <input type="password" id="password_autista" name="password_autista" required><br>
+        
+        <!-- pulsante per inviare il modulo e effettuare il login -->
+        <button type="submit">accedi</button>
+    </form>
+
+    <!-- form per il login del passeggero -->
+    <form action="login_passeggero.php" method="post"> <!-- invia i dati al file login_passeggero.php -->
+        <h2>passeggero</h2> <!-- sottotitolo per distinguere il login del passeggero -->
+        
+        <!-- campo per inserire l'email del passeggero -->
+        <label for="mail_passeggero">mail:</label>
+        <input type="email" id="mail_passeggero" name="mail_passeggero" required><br>
+        
+        <!-- campo per inserire la password del passeggero -->
+        <label for="password_passeggero">password:</label>
+        <input type="password" id="password_passeggero" name="password_passeggero" required><br>
+        
+        <!-- pulsante per inviare il modulo e effettuare il login -->
+        <button type="submit">accedi</button>
+    </form>
+
+    <!-- link per reindirizzare l'utente alla pagina di registrazione -->
+    <a href="registrazione.html">registrati</a>
+</body>
+</html>
